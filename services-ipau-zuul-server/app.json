@@ -1,0 +1,7 @@
+{
+  "name": "services-ipau-zuul-server",
+  "description": "Puerta de enlace para MS de ipau",
+  "repository": "https://github.com/fran893/services-ipau-zuul-server",
+  "image": "heroku/java",
+  "addons": [ "heroku-mysql" ]
+}
