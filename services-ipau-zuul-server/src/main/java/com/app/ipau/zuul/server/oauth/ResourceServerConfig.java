@@ -34,7 +34,8 @@ public class ResourceServerConfig extends  ResourceServerConfigurerAdapter {
 		.antMatchers(HttpMethod.GET, "/api/problematicas/listarProblematicas" ).permitAll()
 		.antMatchers(HttpMethod.GET, "/api/probLocation/problematicasLocation" ).permitAll()
 		.antMatchers(HttpMethod.GET, "/api/probLocation/problematicasLocationPerPrivacy/{isPrivacy}/{idProb3}",
-				"/getLocation/{latitud}/{longitud}", "/locationsProb3/{prob3}").permitAll()
+				"/api/probLocation/getLocation/{latitud}/{longitud}", "/api/probLocation/locationsProb3/{prob3}",
+				"/api/probLocation/problematicasLocation","/api/probLocation/locationsProb3/{prob3}").permitAll()
 		.antMatchers(HttpMethod.PUT, "/api/probLocation/updateCountMarker/{idProbLocation}").permitAll()
 		.antMatchers(HttpMethod.POST, "/api/probLocation/addProblematicaLocation").permitAll()
 		.anyRequest().authenticated()
